@@ -162,6 +162,52 @@ dataLayer.push({
       }]
   }
 });
+	    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "add_to_cart",
+  ecommerce: {
+      transaction_id: "T_12345",
+      affiliation: "Google Merchandise Store",
+      value: 25.42,
+      tax: 4.90,
+      shipping: 5.99,
+      currency: "USD",
+      coupon: "SUMMER_SALE",
+      items: [
+       {
+        item_id: "SKU_12345",
+        item_name: "Stan and Friends Tee",
+        affiliation: "Google Merchandise Store",
+        currency: "USD",
+        discount: 2.22,
+        item_brand: "Google",
+        item_category: "Apparel",
+        item_category2: "Adult",
+        item_category3: "Shirts",
+        item_category4: "Crew",
+        item_variant: "green",
+        location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+        price: 9.99,
+        quantity: 1
+      },
+      {
+        item_id: "SKU_12346",
+        item_name: "Google Grey Women's Tee",
+        affiliation: "Google Merchandise Store",
+        currency: "USD",
+        discount: 3.33,
+        item_brand: "Google",
+        item_category: "Apparel",
+        item_category2: "Adult",
+        item_category3: "Shirts",
+        item_category4: "Crew",
+        item_variant: "gray",
+        location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+        price: 20.99,
+        quantity: 1
+      }]
+  }
+});	    
     </script>
 
     <title>Contact Page</title>
@@ -206,14 +252,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 &emsp;  &emsp;  <img src="img/1.jpg" width="500" height="200">
 </p>
 
-&emsp;  &emsp;  &emsp;  &emsp;  <button id="btncart1"><a href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
+&emsp;  &emsp;  &emsp;  &emsp;  <button><a id="btn1" href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
 <button type="button" id="btnpurchase1" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
 </br></br>
 <p>
 &emsp;  &emsp;  <img src="img/2.jfif" width="500" height="200">
 </p>
 
-&emsp;  &emsp;  &emsp;  &emsp;  <button id="btncart2"><a href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
+&emsp;  &emsp;  &emsp;  &emsp;  <button><a id="btn2" href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
 <button type="button" id="btnpurchase2" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
 
 </body>
